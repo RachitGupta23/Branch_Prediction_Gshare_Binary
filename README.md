@@ -22,6 +22,6 @@ This is a C++-based simulator that does branch prediction performance analysis f
 ## Instructions
 1. Type "make" to build.  (Type "make clean" first if you already compiled and want to recompile from scratch.)
 2. To run simulator:
-   - bimodal - ./sim bimodal 6 gcc_trace.txt
-   - gshare - ./sim gshare 9 3 gcc_trace.txt
-   - hybrid - ./sim hybrid 8 14 10 5 gcc_trace.txt
+   - bimodal with 6 PC bits - `./sim bimodal 6 gcc_trace.txt`
+   - gshare with 9 PC bits and 3-bit wide GBHR - `./sim gshare 9 3 gcc_trace.txt`
+   - hybrid with 8 PC bits for chooser table, 14 PC bits for gshare, 10-bit wide GBHR and 5 PC bits for bimodal- `./sim hybrid 8 14 10 5 gcc_trace.txt`
